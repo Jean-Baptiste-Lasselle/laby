@@ -35,11 +35,11 @@ laby.use(express.static('laby/www'));
 /**
  * a CRUD for something like an online flower shopping REST API
  **/
-antenna.use('/antenna/api/flowers', antennaFlowersAPIRouter);
+laby.use('/antenna/api/flowers', antennaFlowersAPIRouter);
 /**
  * a CRUD for something like the website of a flower shop vitirne site, aka no shop features, just where to find about and all that sh**t
  **/
-antenna.use('/antenna/web/flowers', antennaFlowersAPIRouter);
+laby.use('/antenna/web/flowers', antennaFlowersAPIRouter);
 
 
 // https://nodejs.org/api/net.html#net_server_listen
