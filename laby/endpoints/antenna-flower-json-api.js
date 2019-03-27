@@ -20,7 +20,7 @@ const antennaRouter = express.Router();
  *  expected  by API's user :
  *  => RETRIEVE PART OF CRUD
  **/
-var antennaRouter.get('/', function(request, response, next) {
+antennaRouter.get('/', function(request, response, next) {
 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [RETRIEVE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  someFunctionYouCanCall(4, function (error, bouquet) {
@@ -47,7 +47,7 @@ var antennaRouter.get('/', function(request, response, next) {
  *  expected  by API's user :
  *  => CREATE PART OF CRUD
  **/
-var antennaRouter.post('/', function(request, response, next) {
+antennaRouter.post('/', function(request, response, next) {
 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [CREATE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  someFunctionYouCanCall(4, function (error, bouquet) {
@@ -75,7 +75,7 @@ var antennaRouter.post('/', function(request, response, next) {
  *  expected  by API's user :
  *  => DELETE PART OF CRUD
  **/
-var antennaRouter.delete('/', function(request, response, next) {
+antennaRouter.delete('/', function(request, response, next) {
  
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [DELETE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  someFunctionYouCanCall(4, function (error, bouquet) {
@@ -102,7 +102,7 @@ var antennaRouter.delete('/', function(request, response, next) {
  *  expected  by API's user :
  *  => UPDATE PART OF CRUD
  **/
-var antennaRouter.put('/', function(request, response, next) {
+antennaRouter.put('/', function(request, response, next) {
  
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [UPDATE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  someFunctionYouCanCall(4, function (error, bouquet) {
