@@ -1,3 +1,5 @@
+TODO:  mettre une page HTML dans le www
+
 # The laby server
 
 Is just a simple HTTP server :
