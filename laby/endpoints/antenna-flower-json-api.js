@@ -49,10 +49,6 @@ antennaRouter.get('/', function(request, response, next) {
  **/
 antennaRouter.post('/', function(request, response, next) {
 
-
-/**
- *
- **/
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [CREATE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  module.exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
@@ -81,10 +77,6 @@ antennaRouter.post('/', function(request, response, next) {
  **/
 antennaRouter.delete('/', function(request, response, next) {
 
-
-/**
- *
- **/
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [DELETE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  module.exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
@@ -110,12 +102,8 @@ antennaRouter.delete('/', function(request, response, next) {
  *  expected  by API's user :
  *  => UPDATE PART OF CRUD
  **/
-antennaRouter.update('/', function(request, response, next) {
+antennaRouter.put('/', function(request, response, next) {
 
-
-/**
- *
- **/
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [UPDATE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  module.exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
