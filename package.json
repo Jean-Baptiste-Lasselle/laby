@@ -1,34 +1,31 @@
 {
-  "name": "grapesjs-server",
+  "name": "laby",
   "version": "0.0.1",
-  "description": "Un simpl serveur HTTP statique, et le client grapesjs servi comme contenu statique",
-  "main": "alpha.js",
+  "description": "Un simple serveur HTTP statique, et le client grapesjs servi comme contenu statique",
+  "main": "laby.js",
   "scripts": {
     "test": "echo 'No tests have been implemented yet for the '",
-    "bundle": "parcel build ./grapes/index.html",
-    "start": "node omega.js"
+    "start": "node laby.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Jean-Baptiste-Lasselle/grapesjs-mjml-webclient.git"
+    "url": "git+ssh://git@github.com/Jean-Baptiste-Lasselle/laby.git"
   },
   "keywords": [
     "server",
     "nodejs",
-    "mjml",
-    "grapesjs"
+    "http",
+    "test",
+    "network"
   ],
   "author": "Jean-Baptiste Lasselle",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Jean-Baptiste-Lasselle/grapesjs-mjml-webclient/issues"
+    "url": "https://github.com/Jean-Baptiste-Lasselle/laby.git/issues"
   },
-  "homepage": "https://github.com/Jean-Baptiste-Lasselle/demo-nodejs-live#readme",
+  "homepage": "https://github.com/Jean-Baptiste-Lasselle/laby#readme",
   "dependencies": {
-    "node-xml-stream": "^1.0.2",
     "lodash": "^4.17.11",
-    "grapesjs": "0.14.55",
-    "grapesjs-preset-webpage": "0.1.10",
     "express": "4.16.4",
     "replace-string": "2.0.0",
      "stringbuffer": "^1.0.0"
