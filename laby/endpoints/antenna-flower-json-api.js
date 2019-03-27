@@ -180,3 +180,5 @@ function pickAFlower (error, bouquet) {
   // return response.send(bouquet.voila);
   return bouquet.voila;
 }
+
+module.exports = antennaRouter;
