@@ -1292,13 +1292,14 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		padding: 8em 0 6em 0;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/laby.jpg"); /* https://unsplash.com/photos/6vEqcR8Icbs/download?force=true */ 
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
 		text-align: center;
 		position: relative;
 		cursor: default;
+		opacity: .8;
 	}
 
 		#header input, #header select, #header textarea {
