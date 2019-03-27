@@ -23,7 +23,7 @@ var antennaRouter = express.Router();
 antennaRouter.get('/', function(request, response, next) {
 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [RETRIEVE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
- module.exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
+ exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
    response.setHeader('Content-Type', 'application/json');
    // var bouquet = {};
@@ -50,7 +50,7 @@ antennaRouter.get('/', function(request, response, next) {
 antennaRouter.post('/', function(request, response, next) {
 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [CREATE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
- module.exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
+ exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
    response.setHeader('Content-Type', 'application/json');
    // var bouquet = {};
@@ -78,7 +78,7 @@ antennaRouter.post('/', function(request, response, next) {
 antennaRouter.delete('/', function(request, response, next) {
 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [DELETE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
- module.exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
+ exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
    response.setHeader('Content-Type', 'application/json');
    // var bouquet = {};
@@ -105,7 +105,7 @@ antennaRouter.delete('/', function(request, response, next) {
 antennaRouter.put('/', function(request, response, next) {
 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [UPDATE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
- module.exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
+ exports.flowers.someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
    response.setHeader('Content-Type', 'application/json');
    // var bouquet = {};
@@ -143,7 +143,7 @@ antennaRouter.put('/', function(request, response, next) {
  *     +  the second, being an object containing the stuff that the <code>someFunctionYouCanCall</code> retrieved for you : it is passed to the callback function so you can decide whateveryou want to do with it, when it's there, asynchronously. This argument should be set to <code>null</code> when no data is retrieved : if the error is null too, that means its ok that there's no data back, and there cases where you just dont get anything in return
  *
  **/
-module.exports.flowers.someFunctionYouCanCall = function (howManyFlowersYouWant, whateverYouWantToDoWithItAfter) {
+exports.flowers.someFunctionYouCanCall = function (howManyFlowersYouWant, whateverYouWantToDoWithItAfter) {
   var bouquet = {};
   for(var i = 0; i < howManyFlowersYouWant;i++){
         (function(j){
@@ -167,7 +167,7 @@ module.exports.flowers.someFunctionYouCanCall = function (howManyFlowersYouWant,
  *
  **/
 
-module.exports.flowers.pickAFlower = function (error, bouquet) {
+exports.flowers.pickAFlower = function (error, bouquet) {
   if (error) return next(error);
   // response.setHeader('Content-Type', 'application/json');
   // var bouquet = {};
