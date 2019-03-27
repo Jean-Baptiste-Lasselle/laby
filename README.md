@@ -21,6 +21,8 @@ mkdir -p ~/laby
 cd ~/laby
 
 git clone $URI_DE_CE_REPO .
+
+npm install
 ```
 
 
