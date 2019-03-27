@@ -7,8 +7,8 @@
 * This API doesn't need the help of a databse, it's just mocking it with a simple JSON object loaded on laby's startup
 **/
 // Even though an express reference was created by omega.js entrypoint
-var express = require('express');
-var antennaRouter = express.Router();
+const express = require('express');
+const antennaRouter = express.Router();
 
 /**
  *                            The Flowers API
@@ -20,7 +20,7 @@ var antennaRouter = express.Router();
  *  expected  by API's user :
  *  => RETRIEVE PART OF CRUD
  **/
-antennaRouter.get('/', function(request, response, next) {
+var antennaRouter.get('/', function(request, response, next) {
 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [RETRIEVE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  someFunctionYouCanCall(4, function (error, bouquet) {
@@ -47,7 +47,7 @@ antennaRouter.get('/', function(request, response, next) {
  *  expected  by API's user :
  *  => CREATE PART OF CRUD
  **/
-antennaRouter.post('/', function(request, response, next) {
+var antennaRouter.post('/', function(request, response, next) {
 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [CREATE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  someFunctionYouCanCall(4, function (error, bouquet) {
@@ -75,8 +75,8 @@ antennaRouter.post('/', function(request, response, next) {
  *  expected  by API's user :
  *  => DELETE PART OF CRUD
  **/
-antennaRouter.delete('/', function(request, response, next) {
-
+var antennaRouter.delete('/', function(request, response, next) {
+ 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [DELETE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
@@ -102,8 +102,8 @@ antennaRouter.delete('/', function(request, response, next) {
  *  expected  by API's user :
  *  => UPDATE PART OF CRUD
  **/
-antennaRouter.put('/', function(request, response, next) {
-
+var antennaRouter.put('/', function(request, response, next) {
+ 
  console.log(" >>>>>>>>>>>>>>>>>>>>>  this is the Flowers API ,  Antenna Ltd. [UPDATE PART OF CRUD] endpoint : I am under development, not available for end users yet ");
  someFunctionYouCanCall(4, function (error, bouquet) {
    if (error) return next(error);
