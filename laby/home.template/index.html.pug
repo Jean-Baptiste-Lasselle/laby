@@ -38,14 +38,17 @@ body
       </p>
     </section>
     <!-- Items -->
-
+    section.main.items.laby-endpoints
+      include index.html/includes/antenna-static-endpoint.pug
+      include index.html/includes/antenna-rest-api-enpoint.pug
+<!--
     <section class="main items laby-endpoints">
       <article class="item laby-endpoint">
         <header>
           <a href="#"><img src="images/LABYS_STATIC_ENDPOINT.jpg" alt="" /></a>
           <h3>The Static Endpoint</h3>
         </header>
-        <p>statically serving files in the <code>laby/www</code> folder, at <code>http://`$LABY_HOST`/antenna/api/flowers</code> </p>
+        <p>statically serving files in the <code>laby/www</code> folder, at <code>http://LABY_HOST/antenna/api/flowers</code> </p>
         <ul class="actions">
           <li><a href="#{laby_static_antenna_link}" class="button">Access The Endpoint</a></li>
         </ul>
@@ -60,30 +63,8 @@ body
           <li><a href="#{laby_restapi_antenna_link}" class="button">Access The Endpoint</a></li>
         </ul>
       </article>
-      <!--
-      <article class="item">
-      <header>
-      <a href="#"><img src="images/pic03.jpg" alt="" /></a>
-      <h3>Lorem massa nulla</h3>
-    </header>
-    <p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
-    <ul class="actions">
-    <li><a href="#" class="button">More</a></li>
-  </ul>
-</article>
-<article class="item">
-<header>
-<a href="#"><img src="images/pic04.jpg" alt="" /></a>
-<h3>Ipsum sed tempus</h3>
-</header>
-<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare.</p>
-<ul class="actions">
-<li><a href="#" class="button">More</a></li>
-</ul>
-</article>
-
--->
-</section>
+    </section>
+  -->
 <!-- CTA -->
 <!--
 <section id="cta" class="main special">
