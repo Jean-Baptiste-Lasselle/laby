@@ -17,6 +17,15 @@ Is just a simple HTTP server :
 
 
 ```bash
+
+# ---- BUILD ENV.
+
+export LABY_RELEASE_VERSION=0.0.1
+export LABY_SOCIAL_DEV_TEAM=https://github.com/Jean-Baptiste-Lasselle
+export LABY_WOULD_YOU_LIKE_TO_KNOW_MORE=https://github.com/Jean-Baptiste-Lasselle/laby/readme
+export LABY_STATIC_ANTENNA=/antenna/static
+export LABY_RESTAPI_ANTENNA=/antenna/api/flowers
+
 export URI_DE_CE_REPO=https://github.com/Jean-Baptiste-Lasselle/laby
 
 mkdir -p ~/laby
@@ -34,13 +43,7 @@ npm run build
 Inside the
 
 ```bash
-# sets Laby's port number
-export LABY_PORT=3000
-# sets Laby's
-export LABY_HOST=0.0.0.0
-# Ever heard about servers' Backlog? Google that and come back on that config param
-export LABY_BACKLOG=500
-# npm run start
+# ---- run env.
 npm start
 ```
 
