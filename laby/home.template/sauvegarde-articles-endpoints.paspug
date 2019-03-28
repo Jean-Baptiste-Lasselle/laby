@@ -1,0 +1,24 @@
+<!--
+    <section class="main items laby-endpoints">
+      <article class="item laby-endpoint">
+        <header>
+          <a href="#"><img src="images/LABYS_STATIC_ENDPOINT.jpg" alt="" /></a>
+          <h3>The Static Endpoint</h3>
+        </header>
+        <p>statically serving files in the <code>laby/www</code> folder, at <code>http://LABY_HOST/antenna/api/flowers</code> </p>
+        <ul class="actions">
+          <li><a href="#{laby_static_antenna_link}" class="button">Access The Endpoint</a></li>
+        </ul>
+      </article>
+      <article class="item laby-endpoint">
+        <header>
+          <a href="#"><img src="images/LABYS_FLOWERS_RESTAPI_ENDPOINT.jpg" alt="" /></a>
+          <h3>The Flowers REST API Endpoint</h3>
+        </header>
+        <p>provides a REST API endpoint at  <code>http://`$LABY_HOST`/antenna/api/flowers</code> </p>
+        <ul class="actions">
+          <li><a href="#{laby_restapi_antenna_link}" class="button">Access The Endpoint</a></li>
+        </ul>
+      </article>
+    </section>
+  -->
