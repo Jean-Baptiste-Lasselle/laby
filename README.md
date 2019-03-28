@@ -44,6 +44,13 @@ Inside the
 
 ```bash
 # ---- run env.
+# sets Laby's port number
+export LABY_PORT=3000
+# sets Laby's
+export LABY_HOST=0.0.0.0
+# Ever heard about servers' Backlog? Google that and come back on that config param
+export LABY_BACKLOG=500
+# npm run start
 npm start
 ```
 
