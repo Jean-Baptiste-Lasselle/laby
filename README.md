@@ -20,7 +20,7 @@ Is just a simple HTTP server :
 
 export LABY_RELEASE_VERSION=0.0.1
 export LABY_SOCIAL_DEV_TEAM=https://github.com/Jean-Baptiste-Lasselle
-export LABY_WOULD_YOU_LIKE_TO_KNOW_MORE=https://github.com/Jean-Baptiste-Lasselle/laby/readme
+export LABY_WOULD_YOU_LIKE_TO_KNOW_MORE=https://github.com/Jean-Baptiste-Lasselle/laby#readme
 export LABY_STATIC_ANTENNA=/antenna/static
 export LABY_RESTAPI_ANTENNA=/antenna/api/flowers
 
