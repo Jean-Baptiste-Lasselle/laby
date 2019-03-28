@@ -70,12 +70,12 @@ npm start
 
 * Click on the Static Endpoint Access Button
 
-![Click on the Static Endpoint Access Button](ccc)
+![Click on the Static Endpoint Access Button](https://github.com/Jean-Baptiste-Lasselle/laby/raw/master/documentation/images/CLICK_THE_STATIC_ENDPOINT_ACCESS_BUTTON_ON_HOMEPAGE_2019-03-28%2013-17-04.png)
 
 
 **_What you get_**
 
-![You only get what you give](ccc)
+![You only get what you give](https://github.com/Jean-Baptiste-Lasselle/laby/raw/master/documentation/images/LABY_EXAMPLE_STATIC_ENDPOINT_LOADED_2019-03-28 13-20-43.png)
 
 <!--
 ![screeshow 3](ccc)
