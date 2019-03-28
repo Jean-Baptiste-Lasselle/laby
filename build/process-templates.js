@@ -43,7 +43,7 @@ var generatedLabyHomePage = compiledLabyHomePage({
 
 
 
-const LABY_STATIC_ANTENNA_HOME_FOLDER="../laby/www"
+const LABY_STATIC_ANTENNA_HOME_FOLDER="./laby/www"
 
 
 fs.writeFile(LABY_STATIC_ANTENNA_HOME_FOLDER + "/index.html", generatedLabyHomePage.toString(), function(err, data) {
