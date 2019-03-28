@@ -1,45 +1,21 @@
 doctype html
 html
   include index.html/includes/head.pug
-body
-  <header id="header" class="alt">
-    <div class="inner">
-      <h1>The Laby Server</h1>
-      <p>The Laby Server devops tool (the way you do the things you do)</p>
-    </div>
-  </header>
+  body
+    <header id="header" class="alt">
+      <div class="inner">
+        <h1>The Laby Server</h1>
+        <p>The Laby Server devops tool (the way you do the things you do)</p>
+      </div>
+    </header>
 
-   <!-- Wrapper -->
-   div#wrapper
-
-    <section id="intro" class="main">
-      <span class="icon fa-ils major"></span>
-      <h2>The Laby Server</h2>
-      p A tool designed by <a href="${laby_dev_team_github_social}">Jean-Baptiste Lasselle <span class="icon fa-github"></span></a>
-      <ul class="actions">
-        <li><a href="${laby_s_would_you_like_to_know_more}" class="button big">Learn More</a></li>
-      </ul>
-    </section>
-    <hr/>
-    <section id="cta" class="main special">
-      <h2>What is Laby?</h2>
-      <p>Laby Is just a simple HTTP server : <br />
-        <ul>
-          <li>statically serving files in the <code>laby/www</code> folder, at <code>http://`$LABY_HOST`/antenna/api/flowers</code> </li>
-          <li>Soon providing a websocket endpoint at  <code>http://`$LABY_HOST`/antenna/websocket/flowers</code> </li>
-          <li>providing a REST API endpoint at  <code>http://`$LABY_HOST`/antenna/api/flowers</code>  </li>
-
-          <ul>
-            <li>Those endpoints can be customized and redeployed on-the-fly, to make what I call grope tests, a devops things</li>
-            <li>I especially use it in docker environements, to determine whether the problem came from the software, from the infrastructure, or even better, from both</li>
-          </ul>
-        </ul>
-      </p>
-    </section>
-    section.main.items.laby-endpoints
-      include index.html/includes/antenna-static-endpoint.pug
-      include index.html/includes/antenna-rest-api-enpoint.pug
-    include index.html/includes/footer.pug
+    // <!-- Wrapper -->
+    div#wrapper
+      include index.html/includes/intro.pug
+      section.main.items.laby-endpoints
+        include index.html/includes/antenna-static-endpoint.pug
+        include index.html/includes/antenna-rest-api-enpoint.pug
+        include index.html/includes/footer.pug
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/skel.min.js"></script>
