@@ -2,7 +2,7 @@ var fs = require("fs");
 var pug = require('pug');
 
 // Compile the source code
-const compiledLabyHomePage = pug.compileFile('../laby/home.template/index.html.pug');
+const compiledLabyHomePage = pug.compileFile('./laby/home.template/index.html.pug');
 
 
  /*
