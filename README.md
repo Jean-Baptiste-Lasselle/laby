@@ -54,10 +54,28 @@ export LABY_BACKLOG=500
 npm start
 ```
 
+# Load a static website to the static endpoint
+
+* First, stop the serer. Then execute : 
+
+```bash
+# the dowloaded file must be a valid zip archive
+export TEMPLATE_DOWNLOAD_URI=https://templated.co/industrious/download
+cd laby/www
+curl -L https://templated.co/industrious/download -o template.zip
+unzip template.zip
+cd ../..
+npm start
+```
+
+* Click on the Static Endpoint Access Button
+
+![Click on the Static Endpoint Access Button](ccc)
+
 
 **_What you get_**
 
-
+![You only get what you give](ccc)
 
 <!--
 ![screeshow 3](ccc)
