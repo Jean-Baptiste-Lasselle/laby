@@ -6,7 +6,7 @@ const numeroPortMonAppli = process.env.LABY_PORT;
 // cf. `baclklog` argument of listen method, setting maximum number of pending requests
 //  I'll set that to 500 here
 const nombreMaximalDeRequetesEnTraitement = process.env.LABY_BACKLOG;
-// const nombreMaximalDeRequetesEnTraitement = process.env.BACKLOG;
+
 
 console.log("vérification hostname : " + hostname);
 console.log("vérification numeroPortMonAppli : " + numeroPortMonAppli);
@@ -24,7 +24,24 @@ var laby = express();
  *   laby APP STATIC ROUTES
  *
  ***/
-laby.use(express.static('laby/www'));
+// laby.use(express.static('laby/www'));
+/**
+ *
+ *  Home page at / is generated at Laby's build time, from a pug template, and environement variables.
+ *  Laby uses env variables :
+ *      `export LABY_STATIC_ANTENNA="/antenna/static"` sets the path that express will route to the static endppoint
+ *      `export LABY_RESTAPI_ANTENNA="/antenna/api/flowers"` sets the path that express will route to the REST API endppoint
+ *      `export LABY_WEBSOCKET_ANTENNA="/antenna/websocket/flowers"`  sets the path that express will route to the websocket endppoint
+ * to template the links to the antennas static content you loaded in laby/www
+ *  Laby uses env variables like `export LABY_STATIC_ANTENNA_XXXX=` to template the static content you loaded in laby/www
+ **/
+laby.use("/", express.static(__dirname + "laby/home"));
+
+//laby.use("/antenna/static", express.static(__dirname + "laby/www"));
+laby.use(process.env.LABY_STATIC_ANTENNA, express.static(__dirname + "laby/www"));
+
+
+
 
 /**
  *
@@ -35,8 +52,11 @@ laby.use(express.static('laby/www'));
 /**
  * a CRUD for something like an online flower shopping REST API
  **/
-laby.use('/antenna/api/flowers', antennaFlowersAPIRouter);
+ // laby.use('/antenna/api/flowers', antennaFlowersAPIRouter);
+ laby.use(process.env.LABY_RESTAPI_ANTENNA, antennaFlowersAPIRouter);
 
+
+// laby.use("/antenna/websocket/flowers", express.static(__dirname + "laby/www"));
 /**
  * a CRUD for something like the website of a flower shop vitirne site, aka no shop features, just where to find about and all that sh**t
  **/

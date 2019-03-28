@@ -5,6 +5,7 @@
   "main": "laby.js",
   "scripts": {
     "test": "echo 'No tests have been implemented yet for the '",
+    "build": "npm install && node process-templates.js",
     "start": "node laby.js"
   },
   "repository": {
