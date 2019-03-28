@@ -803,7 +803,7 @@
 		}
 
 	ul {
-		list-style: disc;
+		list-style: lao;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
 	}
@@ -811,6 +811,7 @@
 		ul li {
 			padding-left: 0.5em;
 			text-align: left;
+			
 		}
 
 		ul.alt {
