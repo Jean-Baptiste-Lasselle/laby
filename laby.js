@@ -38,7 +38,7 @@ var laby = express();
 laby.use("/", express.static(__dirname + "laby/home"));
 
 //laby.use("/antenna/static", express.static(__dirname + "laby/www"));
-laby.use(process.env.LABY_STATIC_ANTENNA, express.static(__dirname + "laby/www"));
+laby.use(process.env.LABY_STATIC_ANTENNA || '/antenna/static', express.static(__dirname + "laby/www"));
 
 
 
@@ -53,7 +53,7 @@ laby.use(process.env.LABY_STATIC_ANTENNA, express.static(__dirname + "laby/www")
  * a CRUD for something like an online flower shopping REST API
  **/
  // laby.use('/antenna/api/flowers', antennaFlowersAPIRouter);
- laby.use(process.env.LABY_RESTAPI_ANTENNA, antennaFlowersAPIRouter);
+ laby.use(process.env.LABY_RESTAPI_ANTENNA || '/antenna/api/flowers', antennaFlowersAPIRouter);
 
 
 // laby.use("/antenna/websocket/flowers", express.static(__dirname + "laby/www"));
