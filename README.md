@@ -73,7 +73,7 @@ npm start
 
 **_What you get_**
 
-![You only get what you give](https://github.com/Jean-Baptiste-Lasselle/laby/raw/master/documentation/images/LABY_EXAMPLE_STATIC_ENDPOINT_LOADED_2019-03-28)
+![You only get what you give](https://github.com/Jean-Baptiste-Lasselle/laby/raw/master/documentation/images/LABY_EXAMPLE_STATIC_ENDPOINT_LOADED_2019-03-28%2013-20-43.png)
 
 <!--
 ![screeshow 3](ccc)
