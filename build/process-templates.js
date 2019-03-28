@@ -44,7 +44,7 @@ var generatedLabyHomePage = compiledLabyHomePage({
 
 
 
-const LABY_STATIC_ANTENNA_HOME_FOLDER= __dirname + "../" + "laby/home";
+const LABY_STATIC_ANTENNA_HOME_FOLDER= __dirname + "/" + "laby/home";
 
 // Now done with fs-extra instead of standard fs
 fs.writeFile("./index.html", generatedLabyHomePage.toString(), function(err, data) {
