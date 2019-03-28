@@ -1,4 +1,5 @@
-var fs = require("fs");
+// var fs = require("fs");
+var fs = require("fs-extra");
 var pug = require('pug');
 
 // Compile the source code
@@ -43,10 +44,57 @@ var generatedLabyHomePage = compiledLabyHomePage({
 
 
 
-const LABY_STATIC_ANTENNA_HOME_FOLDER="./laby/www"
+const LABY_STATIC_ANTENNA_HOME_FOLDER= __dirname + "/" + "laby/home";
 
-
-fs.writeFile(LABY_STATIC_ANTENNA_HOME_FOLDER + "/index.html", generatedLabyHomePage.toString(), function(err, data) {
+// Now done with fs-extra instead of standard fs
+fs.writeFile("./index.html", generatedLabyHomePage.toString(), function(err, data) {
   if (err) console.log(err);
   console.log("Successfully generated Laby's Home Page to []].");
 });
+
+
+// Now recursively copying laby/home.template/ to laby/home
+fs.copy(LABY_STATIC_ANTENNA_HOME_FOLDER + '.template', LABY_STATIC_ANTENNA_HOME_FOLDER, function (err) {
+  if (err) {
+    console.error("An error occured while trying to copy [" + LABY_STATIC_ANTENNA_HOME_FOLDER + '.template' + "] folder to [" + LABY_STATIC_ANTENNA_HOME_FOLDER + "] foler.");
+    console.error(err);
+  } else {
+    console.log("Successfully copied [" + LABY_STATIC_ANTENNA_HOME_FOLDER + '.template' + "] folder to [" + LABY_STATIC_ANTENNA_HOME_FOLDER + "] foler.");
+  }
+}); // copies directory, even if it has subdirectories or files
+
+// For Promises / Observable Streams form, see https://github.com/jprichardson/node-fs-extra#sync-vs-async-vs-asyncawait
+/*
+const fs = require('fs-extra')
+
+// Async with promises:
+fs.copy('/tmp/myfile', '/tmp/mynewfile')
+  .then(() => console.log('success!'))
+  .catch(err => console.error(err))
+
+// Async with callbacks:
+fs.copy('/tmp/myfile', '/tmp/mynewfile', err => {
+  if (err) return console.error(err)
+  console.log('success!')
+})
+
+// Sync:
+try {
+  fs.copySync('/tmp/myfile', '/tmp/mynewfile')
+  console.log('success!')
+} catch (err) {
+  console.error(err)
+}
+
+// Async/Await:
+async function copyFiles () {
+  try {
+    await fs.copy('/tmp/myfile', '/tmp/mynewfile')
+    console.log('success!')
+  } catch (err) {
+    console.error(err)
+  }
+}
+
+copyFiles()
+*/
