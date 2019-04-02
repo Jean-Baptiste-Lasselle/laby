@@ -7,10 +7,12 @@ const numeroPortMonAppli = process.env.LABY_PORT;
 //  I'll set that to 500 here
 const nombreMaximalDeRequetesEnTraitement = process.env.LABY_BACKLOG;
 
+const labyHome = process.env.LABY_HOME || '~/laby';
 
 console.log("vérification hostname : " + hostname);
 console.log("vérification numeroPortMonAppli : " + numeroPortMonAppli);
 console.log("vérification BACKLOG : " + nombreMaximalDeRequetesEnTraitement);
+console.log("vérification LABY_HOME : " + labyHome);
 
 /**
  *
@@ -36,9 +38,9 @@ var laby = express();
  *  Laby uses env variables like `export LABY_STATIC_ANTENNA_XXXX=` to template the static content you loaded in laby/www
  **/
 // laby.use("/accueil", express.static(__dirname + "/" + process.env.LABY_HOME || "laby/home"));
-laby.use("/", express.static('laby/home'));
+laby.use("/", express.static(labyHome + '/home'));
 
-laby.use("/antenna/static", express.static('laby/www'));
+laby.use("/antenna/static", express.static(labyHome + '/www'));
 // laby.use(process.env.LABY_STATIC_ANTENNA || '/antenna/static', express.static(__dirname + "/laby/www"));
 
 
