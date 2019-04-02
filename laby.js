@@ -38,9 +38,9 @@ var laby = express();
  *  Laby uses env variables like `export LABY_STATIC_ANTENNA_XXXX=` to template the static content you loaded in laby/www
  **/
 // laby.use("/accueil", express.static(__dirname + "/" + process.env.LABY_HOME || "laby/home"));
-laby.use("/", express.static(labyHome + './laby/home'));
+laby.use("/", express.static(labyHome + '/laby/home'));
 
-laby.use("/antenna/static", express.static(labyHome + './laby/www'));
+laby.use("/antenna/static", express.static(labyHome + '/laby/www'));
 // laby.use(process.env.LABY_STATIC_ANTENNA || '/antenna/static', express.static(__dirname + "/laby/www"));
 
 
