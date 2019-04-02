@@ -26,8 +26,8 @@ export LABY_RESTAPI_ANTENNA=/antenna/api/flowers
 
 export URI_DE_CE_REPO=https://github.com/Jean-Baptiste-Lasselle/laby
 
-mkdir -p ~/laby
-cd ~/laby
+mkdir -p $LABY_HOME
+cd $LABY_HOME
 
 git clone $URI_DE_CE_REPO .
 
