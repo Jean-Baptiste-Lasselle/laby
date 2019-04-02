@@ -17,7 +17,7 @@ Is just a simple HTTP server :
 ```bash
 
 # ---- BUILD ENV.
-export LABY_HOME=/laby
+export LABY_HOME=~/laby
 export LABY_RELEASE_VERSION=0.0.1
 export LABY_SOCIAL_DEV_TEAM=https://github.com/Jean-Baptiste-Lasselle
 export LABY_WOULD_YOU_LIKE_TO_KNOW_MORE=https://github.com/Jean-Baptiste-Lasselle/laby#readme
