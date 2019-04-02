@@ -21,6 +21,10 @@ console.log("vérification LABY_HOME : " + labyHome);
  ***/
 var laby = express();
 
+
+console.log("Verif LABY_HOME : " + labyHome);
+console.log(" LABY_HOME/laby/www : " + labyHome + "/laby/www" );
+
 /**
  *
  *   laby APP STATIC ROUTES
