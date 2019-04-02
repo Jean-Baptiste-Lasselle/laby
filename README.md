@@ -36,9 +36,9 @@ npm run build
 ```
 
 
-# Configure and Run it
+# Load a static website to the static endpoint and start the Laby Server
 
-Inside the
+* First, stop the serer. Then execute : 
 
 ```bash
 # ---- run env.
@@ -48,21 +48,16 @@ export LABY_PORT=3000
 export LABY_HOST=0.0.0.0
 # Ever heard about servers' Backlog? Google that and come back on that config param
 export LABY_BACKLOG=500
-# npm run start
-npm start
-```
 
-# Load a static website to the static endpoint
-
-* First, stop the serer. Then execute : 
-
-```bash
+# --- load template env.
 # the dowloaded file must be a valid zip archive
 export TEMPLATE_DOWNLOAD_URI=https://templated.co/industrious/download
 cd laby/www
 curl -L https://templated.co/industrious/download -o template.zip
 unzip template.zip
 cd ../..
+
+# --- Laby server Startup
 npm start
 ```
 
